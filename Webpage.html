@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefighting Information</title>
+    <link rel="stylesheet" href="Webpage.css">
+</head>
+
+<style type="text/css">
+    *{
+        text-decoration: none;
+    }
+    .navbar{
+        background: firebrick; font-family: calibri; padding-right: 15px;padding-left: 15px;border-radius:10px;
+    }
+    .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo a{
+        font-size: 35px; font-weight: 600; color: white;
+    }
+    li{
+        list-style: none; display: inline-block;
+    }
+    li a{
+        color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+    }
+    button{
+        background-color: rgb(255, 255, 255); margin-left: 39; margin-right:30px;border-radius: 10px; padding: 10px; width: 150px;
+    }
+    button a{
+        color: rgb(153, 29, 29); font-weight: bold; font-size: 15px;
+    }
+  
+    h1{
+        font-size: 60px; font-weight: 600; color: rgb(178, 34, 34);font-family: calibri;align-self: center;justify-content: center;
+    }
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="">Placeholder Name</a> </div>
+        <ul>
+            <li><a href="MainPage.html">Home</a></li>
+            <li><a href="ourmission.html">Our Mission</a></li>
+            <button><a href="Webpage.html">Report a fire</a></button>
+        </ul>
+    </div>
+</nav>
+</body>
+
+<body>
+
+<div class="container">
+    <h1>Wildfire Report</h1>
+    <div class="input-section">
+        <h2>Report Information</h2>
+        <form id="firefighting-form">
+            <div class="form-group">
+                <label for="Location">Location:</label>
+                <input type="text" id="location" name="location">
+            </div>
+            <div class="form-group">
+                <label for="Temperature">Temperature in Celsius:</label>
+                <input type="text" id="age" name="Temperature">
+            </div>
+            <div class="form-group">
+                <label for="time">Time at the start of the fire:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            <div class="form-group">
+                <label for="Fire Intensity">Intensity of fire:</label>
+                <select id="Fire Intensity" name="Fire Intensity">
+                    <option value = "low">Low Intensity</option>
+                    <option value = "medium">Medium Intensity</option>
+                    <option value = "high">High Intensity</option>
+                    </select>
+
+            </div>
+            <div class="form-group">
+                <label for="Wildfire Type">Wildfire Type:</label>
+                <select id="Wildfire Type" name="Wildfire Type">
+                    <option value="Ground">On Floor</option>
+                    <option value="Surface">Surface Fire</option>
+                    <option value="Crown">Tall Fire</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!--<div class="output-section">
+        <h2>Outputs</h2>
+        <div class="output">
+            <label>Name:</label>
+            <span id="output-name"></span>
+        </div>
+        <div class="output">
+            <label>Age:</label>
+            <span id="output-age"></span>
+        </div>
+        <div class="output">
+            <label>Address:</label>
+            <span id="output-address"></span>
+        </div>
+        <div class="output">
+            <label>Nearest Fire Station:</label>
+            <span id="output-fire-station"></span>
+        </div>
+        <div class="output">
+            <label>Type of Emergency:</label>
+            <span id="output-emergency-type"></span>
+        </div> -->
+    </div>
+</div>
+<script src="Webpage.js"></script>
+</body>
+</html>
